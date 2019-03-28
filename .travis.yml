@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.3.0
+bundler_args: --binstubs
+script:
+  - bundle install
+  - rvm docs generate-ri
+  - bin/rspec spec
